@@ -1,3 +1,54 @@
 [submodule "node_modules/astros"]
 	path = node_modules/astros
 	url = git@github.com:lemonabc/astros.git
+[submodule "node_modules/lang-utils"]
+	path = node_modules/lang-utils
+	url = git@github.com:lemonabc/lang-utils.git
+[submodule "node_modules/astros-asset-parse"]
+	path = node_modules/astros-asset-parse
+	url = git@github.com:lemonabc/astros-asset-parse.git
+[submodule "node_modules/astros-css-less"]
+	path = node_modules/astros-css-less
+	url = git@github.com:lemonabc/astros-css-less.git
+[submodule "node_modules/astros-css-sprite"]
+	path = node_modules/astros-css-sprite
+	url = git@github.com:lemonabc/astros-css-sprite.git
+[submodule "node_modules/astros-img-interlace"]
+	path = node_modules/astros-img-interlace
+	url = git@github.com:lemonabc/astros-img-interlace.git
+[submodule "node_modules/astros-js-dep"]
+	path = node_modules/astros-js-dep
+	url = git@github.com:lemonabc/astros-js-dep.git
+[submodule "node_modules/astros-js-minify"]
+	path = node_modules/astros-js-minify
+	url = git@github.com:lemonabc/astros-js-minify.git
+[submodule "node_modules/astros-js-process"]
+	path = node_modules/astros-js-process
+	url = git@github.com:lemonabc/astros-js-process.git
+[submodule "node_modules/astros-js-tpl"]
+	path = node_modules/astros-js-tpl
+	url = git@github.com:lemonabc/astros-js-tpl.git
+[submodule "node_modules/astros-resource-refer"]
+	path = node_modules/astros-resource-refer
+	url = git@github.com:lemonabc/astros-resource-refer.git
+[submodule "node_modules/astros-webcom-refer"]
+	path = node_modules/astros-webcom-refer
+	url = git@github.com:lemonabc/astros-webcom-refer.git
+[submodule "node_modules/console-prettify"]
+	path = node_modules/console-prettify
+	url = git@github.com:lemonabc/console-prettify.git
+[submodule "node_modules/file-plus"]
+	path = node_modules/file-plus
+	url = git@github.com:lemonabc/file-plus.git
+[submodule "node_modules/image-magic"]
+	path = node_modules/image-magic
+	url = git@github.com:lemonabc/image-magic.git
+[submodule "node_modules/pandora-proxy"]
+	path = node_modules/pandora-proxy
+	url = git@github.com:lemonabc/pandora-proxy.git
+[submodule "node_modules/pandorajs"]
+	path = node_modules/pandorajs
+	url = git@github.com:lemonabc/pandorajs.git
+[submodule "node_modules/astros-2ximg"]
+	path = node_modules/astros-2ximg
+	url = git@github.com:lemonabc/astros-2ximg.git
