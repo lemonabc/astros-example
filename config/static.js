@@ -44,7 +44,7 @@ module.exports = {
     hook: [
         'astros-asset-parse',
         'astros-resource-refer',
-        'astros-asset-refer',
+        'astros-webcom-refer',
         'astros-2ximg',
         'astros-js-dep',
         'astros-js-process',
@@ -65,7 +65,8 @@ module.exports = {
             // 解析页面引用了哪些Web组件
             'astros-resource-refer',
             // JS、CSS内部对图片、字体的相对引用
-            'astros-asset-refer',
+            'astros-webcom-refer',
+
             // 支持二倍图自动转一倍图
             'astros-2ximg',
             // 发布时交错属性 

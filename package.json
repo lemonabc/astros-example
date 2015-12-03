@@ -11,7 +11,7 @@
         "astros": "^0.0.4",
         "astros-2ximg": "^0.0.6",
         "astros-asset-parse": "^0.0.1",
-        "astros-asset-refer": "^0.0.4",
+        "astros-webcom-refer": "^0.0.4",
         "astros-css-less": "^0.0.4",
         "astros-css-sprite": "^0.0.2",
         "astros-img-interlace": "^0.0.3",
