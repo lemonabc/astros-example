@@ -5,7 +5,7 @@ module.exports = {
     port: 3201,
     root: require('path').join(__dirname, '..'),
     // 页面存储路径
-    page: require('path').join(__dirname, '..', 'tpls'),
+    // page: require('path').join(__dirname, '..', 'tpls'),
     // 自定发布目录
     // release: require('path').join(__dirname, '..', 'build'),
     // JS文件后缀名，默认为js
