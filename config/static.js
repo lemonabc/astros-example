@@ -14,7 +14,8 @@ module.exports = {
     // cssExt:'less',
     // htmlExt : 'html',
     // JS 相关配置
-    cdnPrefix: '/etao_cn',
+    // 静态资源在服务器分配的目录
+    // cdnPrefix: '/astro',
     // 交错属性开关
     //interlace:true,
     // 打开图片、字体资源MD5
@@ -22,7 +23,7 @@ module.exports = {
     jsImgRefer : {
         rule : '$.res(.__path__.)'
     },
-    jsTpl: "$addRes('{name}','{file}','{content}')",
+    jsTpl: "$res=window.$res||{};$res[{name}]={};$addRes({name},{file},{content})",
     // 是否压缩CSS
     // compressCss:true,
     // 是否压缩JS

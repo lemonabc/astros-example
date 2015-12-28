@@ -41,9 +41,7 @@ module.exports = {
     autoAssets: false,
     // 模板全局属性
     globalVariables: {
-        // cdn: 'http://127.0.0.1:8080',
-        cdn: 'http://127.0.0.1:3104/etao_cn',
-        assets: 'http://10.8.8.43:81/assets',
+        // cdn: 'http://127.0.0.1:3104/'
         theme:'',
     }
 };

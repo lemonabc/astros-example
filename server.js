@@ -14,7 +14,7 @@ require('console-prettify')({
     require('astros');
 
     astro.setProject(__dirname);
-    astro.listen(3104);
+    astro.listen();
 //启动静态服务器 END
 
 
