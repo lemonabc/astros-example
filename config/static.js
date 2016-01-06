@@ -23,7 +23,7 @@ module.exports = {
     jsImgRefer : {
         rule : '$.res(.__path__.)'
     },
-    jsTpl: "$res=window.$res||{};$res[{name}]={};$addRes({name},{file},{content})",
+    jsTpl: "$res=window.$res||{};$res['{name}']={};$res['{name}']['{file}'] = '{content}'",
     // 是否压缩CSS
     // compressCss:true,
     // 是否压缩JS
@@ -45,8 +45,8 @@ module.exports = {
     middlewares: [
         'astros-asset-parse',
         'astros-resource-refer',
-        'astros-webcom-refer',
         'astros-2ximg',
+        'astros-webcom-refer',
         'astros-js-dep',
         'astros-js-process',
         'astros-js-tpl',
