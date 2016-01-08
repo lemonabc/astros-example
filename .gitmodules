@@ -53,14 +53,14 @@
 	path = node_modules/astros-2ximg
 	url = git@github.com:lemonabc/astros-2ximg.git
 [submodule "node_modules/astros-cmd-dep"]
-    path = node_modules/astros-cmd-dep
-    url = git@github.com:lemonabc/astros-cmd-dep.git
+	path = node_modules/astros-cmd-dep
+	url = git@github.com:lemonabc/astros-cmd-dep.git
 [submodule "node_modules/astros-cmd-define"]
-    path = node_modules/astros-cmd-define
-    url = git@github.com:lemonabc/astros-cmd-define.git
+	path = node_modules/astros-cmd-define
+	url = git@github.com:lemonabc/astros-cmd-define.git
 [submodule "node_modules/astros-cmd-read"]
-    path = node_modules/astros-cmd-read
-    url = git@github.com:lemonabc/astros-cmd-read.git
+	path = node_modules/astros-cmd-read
+	url = git@github.com:lemonabc/astros-cmd-read.git
 [submodule "node_modules/astros-jscom-path"]
-    path = node_modules/astros-jscom-path
-    url = git@github.com:lemonabc/astros-jscom-path.git
+	path = node_modules/astros-jscom-path
+	url = git@github.com:lemonabc/astros-jscom-path.git
