@@ -33,6 +33,8 @@ module.exports = {
     //     undef:true
     // },
     // imgPath:'/etao_cn',
+    fontUrl:'/img/fonts/',
+    fontName:'cashierIconFont',
     js: {
         // 模块对应的外网引用地址
         // source: {
