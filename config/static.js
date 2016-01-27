@@ -35,6 +35,7 @@ module.exports = {
     // imgPath:'/etao_cn',
     fontUrl:'/img/fonts/',
     fontName:'cashierIconFont',
+    fontVersion:'1',
     js: {
         // 模块对应的外网引用地址
         // source: {
@@ -54,6 +55,7 @@ module.exports = {
         'astros-js-tpl',
         // 'astros-js-jshint',
         'astros-js-minify',
+        'astros-svgfont',
         'astros-css-less',
     ],
     // cdn:'',
@@ -83,6 +85,7 @@ module.exports = {
             // 'astros-js-jshint',
             // 压缩JS
             'astros-js-minify',
+            'astros-svgfont',
             // 解析LESS
             'astros-css-less',
             // 图片精灵
