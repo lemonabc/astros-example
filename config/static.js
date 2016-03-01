@@ -32,7 +32,6 @@ module.exports = {
     //     globals:'$',
     //     undef:true
     // },
-    // imgPath:'/etao_cn',
     fontUrl:'/img/fonts/',
     fontName:'cashierIconFont',
     fontVersion:'1',
