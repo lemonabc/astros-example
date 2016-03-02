@@ -8,10 +8,10 @@ module.exports = {
     // env: 'development',
     // 项目名称
     name: 'astro',
-    // 服务器端口
-    port: 3100,
+    // 服务器端口,可以不写，默认以3100开始尝试
+    //port: 3103,
     // 更新本版号端口
-    ver_port: 3201,
+    ver_port: 3203,
     // 站点根目录
     root: require('path').join(__dirname, '..'),
     // 页面存储路径
@@ -41,6 +41,7 @@ module.exports = {
     autoAssets: false,
     // 模板全局属性
     globalVariables: {
+        //默认不写，以本机ip为主
         // cdn: 'http://127.0.0.1:3104/'
         theme:'',
     }

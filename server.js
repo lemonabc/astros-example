@@ -4,7 +4,7 @@ var nodePath = require('path');
 var nodeUtil = require('util');
 
 var util = require('lang-utils');
-
+var http = require('http');
 require('console-prettify')({
     prefix:1
 });
@@ -34,14 +34,41 @@ require('console-prettify')({
 
     require('pandora-proxy')(app);
 
-    app.listen(appCfg.port);
-
-    var ips = util.getLocalIp();
-
-    console.log(nodeUtil.format('server is listening on %d', appCfg.port));
-    console.log('you can visit with:')
-
-    ips.forEach(function(ip){
-        console.info('  http://%s:%s',ip, appCfg.port);
+    var port = appCfg.port || 3100;
+    var temp_i = 0;
+    var server = http.createServer(app);
+    server.on('error', function(e){
+        if(appCfg.port){
+            console.warn('端口 %s 被占用,请修改或注释掉site内的port字段', port);
+            return;
+        }
+        if (e.code == 'EADDRINUSE' )  {
+            if(temp_i++ >= 10){
+                console.log('尝试超过十次！');
+                return;
+            }
+            console.warn('端口 %s 被占用，尝试从 %s 启动', port, ++port);
+            setTimeout(function() {
+                server.close();
+                server.listen(port);
+            }, 100);
+            return;
+        }
+        console.info('服务启动失败:');
+        console.log(e.stack);
     });
+    server.on('listening',function(e){
+        var ips = util.getLocalIp();
+
+        console.log(nodeUtil.format('server is listening on %d', port));
+        console.log('you can visit with:')
+
+        ips.forEach(function(ip){
+            console.info('  http://%s:%s',ip, port);
+        });
+    });
+    server.listen(port);
+
+
+    
 //启动Web服务 END
