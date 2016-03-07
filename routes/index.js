@@ -1,3 +1,12 @@
+/**
+ * @title: 主页
+ * @ctime: 2015/10/09
+ * @edittime: 2015/10/09
+ * @ui: 彭倩
+ * @ux: 刘倩茹
+ * @wd: 何伟
+ * @router: /
+ */
 var router = require('express').Router(); // 新建一个 router
 router.get('/', function(req, res) {
     res.render('index', {
