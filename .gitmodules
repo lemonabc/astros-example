@@ -70,3 +70,7 @@
 [submodule "node_modules/pandora-astros-map"]
 	path = node_modules/pandora-astros-map
 	url = https://github.com/lemonabc/pandora-astros-map.git
+[submodule "node_modules/astros-css-less2"]
+	path = node_modules/astros-css-less2
+	url = git@github.com:lemonabc/astros-css-less2.git
+
