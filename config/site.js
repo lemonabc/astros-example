@@ -19,12 +19,12 @@ module.exports = {
             headers: {}
         }
     },
-    /*des: {
+    des: {
         name: 'astro',
-        wd:'苏宁',
-        product:'尚尉',
-        developer:'张保坤'
-    },*/
+        wd:'kumaw,ringcrazy',
+        product:'wheasy',
+        developer:'aimar'
+    },
     // 是否自动启用静态资源服务器
     autoAssets: false,
     // 模板全局属性

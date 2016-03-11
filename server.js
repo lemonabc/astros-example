@@ -33,7 +33,7 @@ require('console-prettify')({
     pandora.init(app, __dirname);
 
     require('pandora-proxy')(app);
-    //require('pandora-astros-map')(app);
+    require('pandora-astros-map')(app);
 
     var port = appCfg.port || 3100;
     var temp_i = 0;
