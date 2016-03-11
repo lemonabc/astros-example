@@ -56,7 +56,8 @@ module.exports = {
             config:{
                 fontUrl:'/img/fonts/',
                 fontName:'cashierIconFont',
-                fontVersion:'1'
+                fontVersion:'1',
+                img : '/img'
             }
         },
         'astros-css-less',
