@@ -4,7 +4,7 @@
  * @edittime: 2015/10/09
  * @ui: 彭倩
  * @ux: 刘倩茹
- * @wd: 何伟
+ * @wd: 何伟,万虎
  * @router: /
  */
 var router = require('express').Router(); // 新建一个 router
