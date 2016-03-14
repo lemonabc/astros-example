@@ -43,10 +43,18 @@ module.exports = {
         'astros-webcom-refer',
         'astros-2ximg',
         'astros-js-dep',
+        'astros-cmd-dep',
+        'astros-cmd-read',
         'astros-js-process',
         'astros-js-tpl',
         // 'astros-js-jshint',
-        'astros-js-minify',
+        'astros-cmd-define',
+        {
+            name:'astros-js-minify',
+            config:{
+                compress: true
+            }
+        },
         'astros-css-less',
     ],
     // cdn:'',
