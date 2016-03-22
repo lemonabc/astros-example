@@ -62,10 +62,8 @@ module.exports = {
         {
             name:'astros-svgfont',
             config:{
-                fontUrl:'/img/fonts/',
-                fontName:'cashierIconFont',
-                fontVersion:'1',
-                img : '/img'
+                fontUrl:'/fonts/',
+                base64:true //移动端兼容性最好，pc不建议使用
             }
         },
         'astros-css-less',

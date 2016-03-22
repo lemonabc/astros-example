@@ -24,7 +24,7 @@ var b = new release(staticCfg);
 
 b.build(function(prjCfg){
     //等待发布静态资源后发布html页面
-    if(staticCfg.rel.releaseHTML){
+    if(staticCfg.releaseHTML){
         //启动Web服务
         var app = (require('express'))();
         var pandora = new(require('pandorajs'));

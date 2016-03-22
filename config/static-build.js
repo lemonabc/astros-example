@@ -58,38 +58,4 @@ module.exports = {
         'astros-css-less',
     ],
     // cdn:'',
-    // 发布的配置
-    rel: {
-            //是否发布html文件
-        releaseHTML : true,
-        // 发布时需要忽略的目录
-        ignore: ['jslib', 'less'],
-        // 发布时需要加载的插件，开发、调试时不会加载
-        middlewares: [
-            // 解析资源
-            'astros-asset-parse',
-            // 解析页面引用了哪些Web组件
-            'astros-resource-refer',
-            // JS、CSS内部对图片、字体的相对引用
-            'astros-webcom-refer',
-            // 支持二倍图自动转一倍图
-            'astros-2ximg',
-            // 发布时交错属性 
-            'astros-img-interlace',
-            //js之间的依赖
-            'astros-js-dep',
-            // 解析JS
-            'astros-js-process',
-
-            //js模版处理
-            'astros-js-tpl',
-            // 'astros-js-jshint',
-            // 压缩JS
-            'astros-js-minify',
-            // 解析LESS
-            'astros-css-less',
-            // 图片精灵
-            'astros-css-sprite'
-        ]
-    }
 }
