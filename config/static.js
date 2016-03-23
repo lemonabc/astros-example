@@ -23,15 +23,6 @@ module.exports = {
     jsImgRefer : {
         rule : '$.res(.__path__.)'
     },
-    jsTpl: "$res=window.$res||{};$res['{name}']={};$res['{name}']['{file}'] = '{content}'",
-    // 是否压缩CSS
-    // compressCss:true,
-    // 是否压缩JS
-    // compressJs:true,
-    // jsHint:{
-    //     globals:'$',
-    //     undef:true
-    // },
     js: {
         // 模块对应的外网引用地址
         // source: {
@@ -46,22 +37,38 @@ module.exports = {
         'astros-resource-refer',
         'astros-2ximg',
         'astros-webcom-refer',
-        'astros-js-dep',
+        // 'astros-cmd-dep',
+        // 'astros-cmd-read',
+        // 'astros-js-dep',
         'astros-js-process',
-        'astros-js-tpl',
-        // 'astros-js-jshint',
-        'astros-js-minify',
+        {
+            name:'astros-js-tpl',
+            config:{
+                    tpl: "$res=window.$res||{};$res['{name}']={};$res['{name}']['{file}'] = '{content}'"
+            }
+        },
+        // {
+        //     name: 'astros-js-jshint',
+        //     config:{
+        //         globals:'$',
+        //         undef:true
+        //     }
+        // },
+        // 'astros-cmd-define',
         {
             name:'astros-svgfont',
             config:{
-                fontUrl:'/img/fonts/',
-                fontName:'cashierIconFont',
-                fontVersion:'1'
+                fontUrl:'/fonts/',
+                base64:true //移动端兼容性最好，pc不建议使用
             }
         },
-        'astros-css-less',
-    ],
-    // cdn:'',
-    
+        {
+            name    : 'astros-css-less2',
+            config  : {
+                compress : true
+            }
+        },
+        'astros-css-sprite'
+    ]
 }
 

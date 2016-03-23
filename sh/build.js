@@ -5,8 +5,8 @@ var nodeUtil = require('util');
 var fs = require("fs"); 
 var release = require('astros').builder;
 var sitePath = process.cwd();
-var staticCfg = require('../config/static-res.js');
-var appCfg = require('../config/site-res.js');
+var staticCfg = require('../config/static-build.js');
+var appCfg = require('../config/site-build.js');
 var http = require('http');
 var nodegrass = require('nodegrass');
 var filep = require('file-plus');
@@ -24,7 +24,7 @@ var b = new release(staticCfg);
 
 b.build(function(prjCfg){
     //等待发布静态资源后发布html页面
-    if(staticCfg.rel.releaseHTML){
+    if(staticCfg.releaseHTML){
         //启动Web服务
         var app = (require('express'))();
         var pandora = new(require('pandorajs'));

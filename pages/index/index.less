@@ -17,3 +17,20 @@ body{
 	-moz-osx-font-smoothing: grayscale;
 	vertical-align:middle;
 }
+
+@nice-blue: #5B83AD;
+@light-blue: @nice-blue + #111;
+
+#header {
+  color: @light-blue;
+}
+
+@varr : "red";
+.test_img{
+    background:url('~/img/123.png?v=@{varr}')
+}
+
+
+.test_img2{
+    background:url('~/img/sprite/icon/car.png?v=@{varr}')
+}
