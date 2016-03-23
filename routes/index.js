@@ -7,7 +7,7 @@
  * @wd: 何伟,万虎
  * @router: /
  */
-var router = require('express').Router(); // 新建一个 router
+var router = require('express').Router(); // 新建一个router
 router.get('/', function(req, res) {
     res.render('index', {
         title:'首页'
