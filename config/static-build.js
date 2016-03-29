@@ -16,14 +16,11 @@ module.exports = {
     // JS 相关配置
     // cdnPrefix: '/productname',
     imgPath: '../..',
-    // 交错属性开关
-    interlace:true,
     // 打开图片、字体资源MD5
     // imgMd5 : true,
     jsImgRefer: {
         rule: '$.res(.__path__.)'
     },
-    jsTpl: "$addRes('{name}','{file}',{content})",
     js: {
         // 模块对应的外网引用地址
         // source: {
@@ -34,8 +31,8 @@ module.exports = {
     },
     //是否发布html文件
     releaseHTML: true,
-    // 发布时需要忽略的目录
-    ignore: ['jslib', 'less'],
+    // 发布时需要忽略的Assets下的目录
+    ignore: ['jslib', 'less', 'jsLib'],
     // 发布时需要加载的插件，开发、调试时不会加载
     middlewares: [
         // 解析资源
@@ -47,7 +44,10 @@ module.exports = {
         // 支持二倍图自动转一倍图
         'astros-2ximg',
         // 发布时交错属性 
-        'astros-img-interlace',
+        {
+            name: 'astros-img-interlace'
+            // config:{}
+        },
         // 'astros-cmd-dep',
         // 'astros-cmd-read',
         //js之间的依赖
@@ -55,28 +55,29 @@ module.exports = {
         // 解析JS
         'astros-js-process',
         //js模版处理
-        'astros-js-tpl',
+        {
+            name:'astros-js-tpl',
+            config:{
+                    tpl: "$res=window.$res||{};$res['{name}']={};$res['{name}']['{file}'] = '{content}'"
+            }
+        },
         // 'astros-js-jshint',
-        // 'astros-cmd-define',
+        'astros-cmd-define',
+        // 自动生成字体文件
+        {
+            name:'astros-svgfont',
+            config:{
+                fontUrl:'/fonts/',
+                base64:true //移动端兼容性最好，pc不建议使用
+            }
+        },
         // 压缩JS
         {
             name:'astros-js-minify',
             config:{
                 compress: true
             }
-        },
-        // 自动生成字体文件
-        {
-            name:'astros-svgfont',
-            config:{
-                // 字体存放路径
-                fontUrl:'/img/fonts/',
-                // 字体名称
-                fontName:'ast_icon_font',
-                fontVersion:'1',
-                img : '/img'
-            }
-        },
+        },        
         // 解析LESS
         {
             name:'astros-css-less2',

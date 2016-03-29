@@ -37,9 +37,9 @@ module.exports = {
         'astros-resource-refer',
         'astros-2ximg',
         'astros-webcom-refer',
-        // 'astros-cmd-dep',
-        // 'astros-cmd-read',
-        // 'astros-js-dep',
+        'astros-cmd-dep',
+        'astros-cmd-read',
+        'astros-js-dep',
         'astros-js-process',
         {
             name:'astros-js-tpl',
@@ -47,14 +47,7 @@ module.exports = {
                     tpl: "$res=window.$res||{};$res['{name}']={};$res['{name}']['{file}'] = '{content}'"
             }
         },
-        // {
-        //     name: 'astros-js-jshint',
-        //     config:{
-        //         globals:'$',
-        //         undef:true
-        //     }
-        // },
-        // 'astros-cmd-define',
+        'astros-cmd-define',
         {
             name:'astros-svgfont',
             config:{
@@ -62,10 +55,17 @@ module.exports = {
                 base64:true //移动端兼容性最好，pc不建议使用
             }
         },
+        // 压缩JS
+        {
+            name:'astros-js-minify',
+            config:{
+                compress: true
+            }
+        },
         {
             name    : 'astros-css-less2',
             config  : {
-                compress : true
+                compress : false
             }
         },
         'astros-css-sprite'
