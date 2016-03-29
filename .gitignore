@@ -5,3 +5,5 @@ _cache
 npm-debug.log
 
 assets/img/fonts/*
+
+assets/fonts
