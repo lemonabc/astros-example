@@ -1,35 +1,50 @@
 {
-  "name": "astro-example",
+  "name": "astros-example",
   "version": "1.0.0",
-  "description": "",
+  "description": "Astros项目的示例站点",
   "main": "server.js",
   "dependencies": {
-    "astros": ">=0.0.4",
-    "astros-2ximg": ">=0.0.6",
-    "astros-asset-parse": ">=0.0.1",
-    "astros-css-less": ">=0.0.4",
-    "astros-css-sprite": ">=0.0.2",
-    "astros-img-interlace": ">=0.0.3",
-    "astros-js-dep": ">=0.0.2",
-    "astros-js-minify": ">=0.0.3",
-    "astros-js-process": ">=0.0.4",
-    "astros-js-tpl": ">=0.0.2",
-    "astros-resource-refer": ">=0.0.2",
-    "astros-webcom-refer": ">=0.0.4",
-    "astros-svgfont":">=0.0.1",
-    "async": ">=1.5.0",
-    "console-prettify": ">=0.0.2",
-    "express": ">=4.13.3",
-    "file-plus": ">=0.0.2",
-    "lang-utils": ">=0.0.2",
-    "pandora-proxy": ">=0.0.3",
-    "pandorajs": ">=0.0.8"
+    "astros": "^1.0.0",
+    "astros-2ximg": "~1.0.1",
+    "astros-asset-parse": "~1.0.0",
+    "astros-cmd-define": "~1.0.0",
+    "astros-cmd-read": "~1.0.0",
+    "astros-css-less": "~1.0.0",
+    "astros-cmd-dep": "~1.0.0",
+    "astros-css-less2": "~1.0.0",
+    "astros-css-sprite": "~1.0.1",
+    "astros-js-dep": "~1.0.0",
+    "astros-js-minify": "~1.0.2",
+    "astros-js-tpl": "~1.0.0",
+    "astros-img-interlace": "~1.0.1",
+    "astros-js-process": "~1.0.0",
+    "astros-resource-refer": "~1.0.0",
+    "astros-jscom-path": "~1.0.0",
+    "astros-webcom-refer": "~1.0.0",
+    "astros-svgfont": "~1.0.0",
+    "async": "^1.5.0",
+    "console-prettify": "~1.0.1",
+    "express": "^4.13.3",
+    "file-plus": "~1.0.0",
+    "lang-utils": "~1.0.0",
+    "nodegrass": "^0.0.3",
+    "pandora-astros-map": "~1.0.0",
+    "pandorajs": "^0.0.14",
+    "pandora-proxy": "~1.0.0"
   },
-  "optionalDependencies": {},
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "author": "lemonabc",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lemonabc/astros-example.git"
+  },
+  "author": "ilemonabc@qq.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lemonabc/astros-example/issues"
+  },
+  "homepage": "https://github.com/lemonabc/astros-example#readme"
 }
