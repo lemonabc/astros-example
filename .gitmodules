@@ -66,11 +66,14 @@
 	url = git@github.com:lemonabc/astros-jscom-path.git
 [submodule "node_modules/astros-svgfont"]
 	path = node_modules/astros-svgfont
-	url = https://github.com/lemonabc/astros-svgfont
+	url = git@github.com:lemonabc/astros-svgfont.git
 [submodule "node_modules/pandora-astros-map"]
 	path = node_modules/pandora-astros-map
-	url = https://github.com/lemonabc/pandora-astros-map.git
+	url = git@github.com:lemonabc/pandora-astros-map.git
 [submodule "node_modules/astros-css-less2"]
 	path = node_modules/astros-css-less2
 	url = git@github.com:lemonabc/astros-css-less2.git
 
+[submodule "node_modules/svgfont"]
+	path = node_modules/svgfont
+	url = git@github.com:lemonabc/svgfont.git
