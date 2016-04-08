@@ -31,6 +31,8 @@ module.exports = {
     globalVariables: {
         //默认不写，以本机ip为主
         // cdn: 'http://127.0.0.1:3104/'
-        theme:'',
+        ver: function() {
+            return Date.now;
+        }
     }
 };

@@ -21,7 +21,7 @@ module.exports = {
     // 打开图片、字体资源MD5
     imgMd5 : true,
     jsImgRefer : {
-        rule : '$.res(.__path__.)'
+        rule : '$res(.__path__.)'
     },
     js: {
         // 模块对应的外网引用地址
@@ -59,7 +59,7 @@ module.exports = {
         {
             name:'astros-js-minify',
             config:{
-                compress: true
+                compress: false
             }
         },
         {
