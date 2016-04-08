@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}-Astro</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" href="{{$g.cdn}}/css/p/{{pageName}}.css?v={{$ver}}"/>
+    </head>
+    <body>
+        <div id="astro-wrap" class="g-main">
+            <module:header-menu />
+            <div id="bd" class="g-wrap">
+                <div id="bd-inner">
+                    <point:content/>
+                </div>
+            </div>
+            <div class="layout-normal">
+                <div class="demo">
+                    这是layout-normal的内容，色值是blue
+                </div>
+            </div>
+            <module:footer />            
+        </div>
+        {{if !nojs}}
+        <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+        <script src="{{$g.cdn}}/js/p/{{pageName}}.js?v={{$ver}}"></script>
+        {{/if}}
+</html>

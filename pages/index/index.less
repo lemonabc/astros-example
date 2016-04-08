@@ -1,36 +1,18 @@
-body{
-    color:#dedede;
-    p{
-        color:red;
+h1{
+    font-size: 18px;
+    line-height: 3;
+}
+
+ul{
+    width: 400px;
+    margin: 30px auto;
+    text-align: left;
+    line-height: 2;
+    a{
+        margin-right: 1em;
+        color: rgb(56, 122, 217);
+        &:hover{
+            color: rgb(56, 122, 217);
+        }
     }
-}
-.m-icon{
-	display:inline-block;
-	font-family: 'font1';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	vertical-align:middle;
-}
-
-@nice-blue: #5B83AD;
-@light-blue: @nice-blue + #111;
-
-#header {
-  color: @light-blue;
-}
-
-@varr : "red";
-.test_img{
-    background:url('~/img/123.png?v=@{varr}')
-}
-
-
-.test_img2{
-    background:url('~/img/sprite/icon/car.png?v=@{varr}')
 }
