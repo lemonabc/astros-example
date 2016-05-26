@@ -19,11 +19,15 @@ module.exports = {
             headers: {}
         }
     },
-    des: {
-        name: 'astro',
-        wd:'kumaw,ringcrazy',
-        product:'wheasy',
-        developer:'aimar'
+    siteMap:{
+        // 站点地图路径
+        route: '/',
+        des: {
+            name: 'Astros示例站点',
+            wd:'kumaw,ringcrazy',
+            product:'wheasy',
+            developer:'aimar'
+        }        
     },
     // 是否自动启用静态资源服务器
     autoAssets: false,

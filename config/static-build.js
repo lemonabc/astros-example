@@ -2,7 +2,7 @@
 module.exports = {
     // debug: true,
     // 站点根目录
-    port: 3201,
+    port: 3200,
     root: require('path').join(__dirname, '..'),
     // 页面存储路径
     // page: require('path').join(__dirname, '..', 'pages'),
