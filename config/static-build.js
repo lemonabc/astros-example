@@ -29,8 +29,6 @@ module.exports = {
         // 不合并的组件
         unCombine: ['jquery', 'mo', 'zepto']
     },
-    //是否发布html文件
-    releaseHTML: true,
     // 发布时需要忽略的Assets下的目录
     ignore: ['jslib', 'less', 'jsLib'],
     // 发布时需要加载的插件，开发、调试时不会加载
