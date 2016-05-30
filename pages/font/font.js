@@ -1,1 +1,3 @@
-require('dialog')('hello cmd');
+//@require dialog,plugina
+
+var a = 'ss'

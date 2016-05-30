@@ -4,6 +4,8 @@ module.exports = {
     // 站点根目录
     port: 3200,
     root: require('path').join(__dirname, '..'),
+    //静态资源cdn地址，默认为本机
+    //cdn: 'http://127.0.0.1:3104/',
     // 页面存储路径
     // page: require('path').join(__dirname, '..', 'tpls'),
     // 自定发布目录
