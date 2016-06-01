@@ -31,6 +31,7 @@ module.exports = {
         //     'jquery': 'http://cdn.baidu.com/jquery.js',
         // },
         // 不合并的组件
+        // jslib:''
         unCombine: ['jquery', 'mo', 'zepto']
     },
     // 引用的插件，根据书写顺序加载
@@ -42,6 +43,8 @@ module.exports = {
         'astros-cmd-dep',
         'astros-cmd-read',
         'astros-js-dep',
+        'astros-asset-dep-parse',
+        'astros-asset-for-dep',
         'astros-js-process',
         {
             name:'astros-js-tpl',
