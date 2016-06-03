@@ -3,9 +3,7 @@ var nodePath = require('path');
 var ver_cache = {};
 module.exports = {
     // env: 'development',
-    // 项目名称
-    name: 'default',
-    // 服务器端口,可以不写，默认以3100开始尝试
+    // 服务器端口，默认从3100开始尝试
     //port: 3103,
     // 站点根目录
     root: require('path').join(__dirname, '..'),
@@ -38,8 +36,7 @@ module.exports = {
         ver: function() {
             return Date.now;
         }
-        //静态自愿请求地址，默认不写，以本机ip为主
+        //静态资源请求地址，默认不写，以本机ip为主
         // assetsUrl:'http://127.0.0.1:3104/'
-        // 
     }
 };

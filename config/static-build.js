@@ -42,10 +42,7 @@ module.exports = {
         // 支持二倍图自动转一倍图
         'astros-2ximg',
         // 发布时交错属性 
-        {
-            name: 'astros-img-interlace'
-            // config:{}
-        },
+        'astros-img-interlace',
         // 'astros-cmd-dep',
         // 'astros-cmd-read',
         //js之间的依赖
@@ -70,12 +67,7 @@ module.exports = {
             }
         },
         // 压缩JS
-        {
-            name:'astros-js-minify',
-            config:{
-                compress: true
-            }
-        },        
+        'astros-js-minify',
         // 解析LESS
         {
             name:'astros-css-less2',

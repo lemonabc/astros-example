@@ -18,8 +18,6 @@ module.exports = {
     // JS 相关配置
     // 静态资源在服务器分配的目录
     // cdnPrefix: '/astro',
-    // 交错属性开关
-    //interlace:true,
     // 打开图片、字体资源MD5
     imgMd5 : true,
     jsImgRefer : {
