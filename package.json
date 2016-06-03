@@ -29,7 +29,7 @@
     "lang-utils": "~1.0.0",
     "nodegrass": "^0.0.3",
     "pandora-astros-map": "~2.0.0",
-    "pandorajs": "^0.0.14",
+    "pandorajs": "~1.0.7",
     "pandora-proxy": "~1.0.0"
   },
   "devDependencies": {},
