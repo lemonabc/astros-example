@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>seajs</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" href="{{$g.cdn}}/css/p/{{pageName}}.css">
+        <script src="{{$g.cdn}}/js/m/sea-com.js"></script>
+    </head>
+    <body>
+    <point:content />
+    <script>
+        seajs.config({
+          base: "{{$g.cdn}}",
+          alias: {
+            "$": "js/jquery.js",
+            "underscore": "js/underscore.js",
+            "backbone": "js/backbone.js"
+          }
+        });
+        seajs.use("js/p/{{pageName}}")
+    </script>
+    </body>
+</html>

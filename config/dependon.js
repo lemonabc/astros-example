@@ -5,14 +5,8 @@
 //4.压缩关系只能以英文字母开头
 module.exports = {
 	combine : {
-		'mo':['mo-core','mo-xpost','mo-dialog' ,'jquery'],
-		'abc':['c','b','c', 'diloag'],
-		'xyz':['dialog-login', 'com:header'],
-		'dialog':['dialog']
-
+        'sea-com':['js/seajs']
 	},
 	page : {
-		font: ['dialog'],
-		login:['abc']
 	}
 }

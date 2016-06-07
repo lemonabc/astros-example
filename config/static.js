@@ -8,6 +8,7 @@ module.exports = {
     //cdn: 'http://127.0.0.1:3104/',
     // 页面存储路径
     // page: require('path').join(__dirname, '..', 'tpls'),
+    jsCom :require('path').join(__dirname, '..', 'app'),
     // 自定发布目录
     // release: require('path').join(__dirname, '..', 'build'),
     // JS文件后缀名，默认为js
@@ -36,35 +37,8 @@ module.exports = {
     middlewares: [
         'astros-asset-parse',
         'astros-resource-refer',
-        'astros-2ximg',
         'astros-webcom-refer',
-        'astros-cmd-dep',
-        'astros-cmd-read',
-        'astros-js-dep',
-        'astros-asset-dep-parse',
-        'astros-asset-for-dep',
-        'astros-js-process',
-        {
-            name:'astros-js-tpl',
-            config:{
-                    tpl: "$res=window.$res||{};$res['{name}']={};$res['{name}']['{file}'] = '{content}'"
-            }
-        },
-        'astros-cmd-define',
-        {
-            name:'astros-svgfont',
-            config:{
-                fontUrl:'/fonts/',
-                base64:true //移动端兼容性最好，pc不建议使用
-            }
-        },
-        // 压缩JS
-        {
-            name:'astros-js-minify',
-            config:{
-                compress: false
-            }
-        },
+        'astros-2ximg',
         {
             name    : 'astros-css-less2',
             config  : {

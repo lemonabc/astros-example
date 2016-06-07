@@ -8,6 +8,7 @@ module.exports = {
     // page: require('path').join(__dirname, '..', 'pages'),
     // 自定发布目录
     // release: require('path').join(__dirname, '..', 'build'),
+    jsCom :require('path').join(__dirname, '..', 'app'),
     // JS文件后缀名，默认为js
     // jsExt:'js',
     // CSS文件后缀名
@@ -30,7 +31,7 @@ module.exports = {
         unCombine: ['jquery', 'mo', 'zepto']
     },
     // 发布时需要忽略的Assets下的目录
-    ignore: ['jslib', 'less', 'jsLib'],
+    ignore: ['less', 'jslib'],
     // 发布时需要加载的插件，开发、调试时不会加载
     middlewares: [
         // 解析资源
@@ -45,36 +46,20 @@ module.exports = {
         'astros-img-interlace',
         // 'astros-cmd-dep',
         // 'astros-cmd-read',
-        //js之间的依赖
-        'astros-js-dep',
-        // 解析JS
-        'astros-js-process',
-        //js模版处理
-        {
-            name:'astros-js-tpl',
-            config:{
-                    tpl: "$res=window.$res||{};$res['{name}']={};$res['{name}']['{file}'] = '{content}'"
-            }
-        },
-        // 'astros-js-jshint',
-        'astros-cmd-define',
-        // 自动生成字体文件
-        {
-            name:'astros-svgfont',
-            config:{
-                fontUrl:'/fonts/',
-                base64:true //移动端兼容性最好，pc不建议使用
-            }
-        },
         // 压缩JS
-        'astros-js-minify',
-        // 解析LESS
         {
-            name:'astros-css-less2',
-            config:{
-                compress: true
+            name: 'astros-js-minify',
+            config: {
+                compress: true,
+                options: {
+                    mangle: {
+                        except: ["define", "require", 'module', 'export']
+                    }
+                }
             }
         },
+        // 解析LESS
+        'astros-css-less2',
         'astros-css-sprite'
     ]
 }
