@@ -71,6 +71,7 @@ module.exports = {
                 compress : false
             }
         },
+        'astros-css-clean',
         'astros-css-sprite'
     ]
 }
