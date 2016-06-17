@@ -48,7 +48,7 @@ module.exports = {
             }
         },
         'astros-cmd-define',
-        'astros-svgfont'
+        'astros-svgfont',
         // 压缩JS
         // 'astros-js-minify',
         {
