@@ -18,9 +18,6 @@ module.exports = {
     imgPath: '../..',
     // 打开图片、字体资源MD5
     // imgMd5 : true,
-    jsImgRefer: {
-        rule: '$.res(.__path__.)'
-    },
     js: {
         // 模块对应的外网引用地址
         // source: {
@@ -59,13 +56,7 @@ module.exports = {
         // 'astros-js-jshint',
         'astros-cmd-define',
         // 自动生成字体文件
-        {
-            name:'astros-svgfont',
-            config:{
-                fontUrl:'/fonts/',
-                base64:true //移动端兼容性最好，pc不建议使用
-            }
-        },
+        'astros-svgfont',
         // 压缩JS
         'astros-js-minify',
         // 解析LESS

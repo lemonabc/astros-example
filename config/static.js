@@ -20,9 +20,6 @@ module.exports = {
     // cdnPrefix: '/astro',
     // 打开图片、字体资源MD5
     imgMd5 : true,
-    jsImgRefer : {
-        rule : '$res(.__path__.)'
-    },
     js: {
         // 模块对应的外网引用地址
         // source: {
@@ -51,20 +48,9 @@ module.exports = {
             }
         },
         'astros-cmd-define',
-        {
-            name:'astros-svgfont',
-            config:{
-                fontUrl:'/fonts/',
-                base64:true //移动端兼容性最好，pc不建议使用
-            }
-        },
+        'astros-svgfont'
         // 压缩JS
-        {
-            name:'astros-js-minify',
-            config:{
-                compress: false
-            }
-        },
+        // 'astros-js-minify',
         {
             name    : 'astros-css-less2',
             config  : {
