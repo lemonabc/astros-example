@@ -14,10 +14,10 @@ module.exports = {
     // cssExt:'less',
     // htmlExt : 'html',
     // JS 相关配置
-    // cdnPrefix: '/productname',
+    cdnPrefix: '/productname',
     imgPath: '../..',
     // 打开图片、字体资源MD5
-    // imgMd5 : true,
+    imgMd5 : true,
     js: {
         // 模块对应的外网引用地址
         // source: {
@@ -47,12 +47,7 @@ module.exports = {
         // 解析JS
         'astros-js-process',
         //js模版处理
-        {
-            name:'astros-js-tpl',
-            config:{
-                    tpl: "$res=window.$res||{};$res['{name}']={};$res['{name}']['{file}'] = '{content}'"
-            }
-        },
+        'astros-js-tpl',
         // 'astros-js-jshint',
         'astros-cmd-define',
         // 自动生成字体文件
@@ -60,12 +55,7 @@ module.exports = {
         // 压缩JS
         'astros-js-minify',
         // 解析LESS
-        {
-            name:'astros-css-less2',
-            config:{
-                compress: true
-            }
-        },
+        'astros-css-less2',
         'astros-css-clean',
         'astros-css-sprite'
     ]

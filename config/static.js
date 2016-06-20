@@ -41,23 +41,12 @@ module.exports = {
         'astros-asset-dep-parse',
         'astros-asset-for-dep',
         'astros-js-process',
-        {
-            name:'astros-js-tpl',
-            config:{
-                    tpl: "$res=window.$res||{};$res['{name}']={};$res['{name}']['{file}'] = '{content}'"
-            }
-        },
+        'astros-js-tpl',
         'astros-cmd-define',
         'astros-svgfont',
         // 压缩JS
         // 'astros-js-minify',
-        {
-            name    : 'astros-css-less2',
-            config  : {
-                compress : false
-            }
-        },
-        'astros-css-clean',
+        'astros-css-less2',
         'astros-css-sprite'
     ]
 }
