@@ -43,7 +43,10 @@ module.exports = {
         'astros-js-process',
         'astros-js-tpl',
         'astros-cmd-define',
-        'astros-svgfont',
+        {   
+            name:'astros-svgfont'
+        },
+        
         // 压缩JS
         // 'astros-js-minify',
         'astros-css-less2',
