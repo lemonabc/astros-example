@@ -41,7 +41,12 @@ module.exports = {
         'astros-asset-dep-parse',
         'astros-asset-for-dep',
         'astros-js-process',
-        'astros-js-tpl',
+        {
+            name: 'astros-js-tpl',
+            config:{
+                tpl: '$tpl({name},{file},{content})'
+            }
+        },
         'astros-cmd-define',
         'astros-svgfont',
         // 压缩JS
