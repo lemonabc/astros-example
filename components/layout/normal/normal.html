@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>{{title}}-Astro</title>
+        <title><%title%>-Astro</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <link rel="stylesheet" href="{{$g.cdn}}/css/p/{{pageName}}.css?v={{$ver}}"/>
+        <link rel="stylesheet" href="<%$g.cdn%>/css/p/<%pageName%>.css?v=<%$ver%>"/>
     </head>
     <body>
         <div id="astro-wrap" class="g-main">
@@ -21,8 +21,8 @@
             </div>
             <module:footer />            
         </div>
-        {{if !nojs}}
+        <%if !nojs%>
         <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
-        <script src="{{$g.cdn}}/js/p/{{pageName}}.js?v={{$ver}}"></script>
-        {{/if}}
+        <script src="<%$g.cdn%>/js/p/<%pageName%>.js?v=<%$ver%>"></script>
+        <%/if%>
 </html>

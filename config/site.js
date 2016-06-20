@@ -5,6 +5,8 @@ module.exports = {
     // env: 'development',
     // 服务器端口，默认从3100开始尝试
     //port: 3103,
+    openTag:"<%",
+    closeTag:"%>",
     // 站点根目录
     root: require('path').join(__dirname, '..'),
     // 页面存储路径
