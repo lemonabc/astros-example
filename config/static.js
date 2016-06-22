@@ -30,8 +30,7 @@ module.exports = {
         'astros-cmd-dep',
         'astros-cmd-read',
         'astros-js-dep',
-        'astros-asset-dep-parse',
-        'astros-asset-for-dep', {
+        {
             name: 'astros-js-process',
             config: {
                 ignore_require: ['jquery']
