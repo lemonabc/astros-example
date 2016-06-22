@@ -47,7 +47,23 @@ module.exports = {
         // 解析JS
         'astros-js-process',
         //js模版处理
-        'astros-js-tpl',
+        'astros-cmd-define', {
+            name: 'astros-js-tpl',
+            config: {
+                tpl: '$tpl(\'{name}\',\'{content}\')',
+                define: ['(function(win) {',
+                    'var _tpl = {};',
+                    'window.$tpl = function(key, ctx) {',
+                        'if (ctx) {',
+                            '_tpl[key] = ctx;',
+                            'return;',
+                        '}',
+                        'return _tpl[key];',
+                    '}',
+                '}(window));',
+                ].join('\n')
+            }
+        },
         // 'astros-js-jshint',
         'astros-cmd-define',
         // 自动生成字体文件

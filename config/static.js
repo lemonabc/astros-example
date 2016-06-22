@@ -1,4 +1,5 @@
 // 静态资源服务器配置
+'use strict'
 module.exports = {
     // debug: true,
     // 站点根目录
@@ -19,7 +20,7 @@ module.exports = {
     // 静态资源在服务器分配的目录
     // cdnPrefix: '/astro',
     // 打开图片、字体资源MD5
-    imgMd5 : true,
+    imgMd5: true,
     // 引用的插件，根据书写顺序加载
     middlewares: [
         'astros-asset-parse',
@@ -30,18 +31,27 @@ module.exports = {
         'astros-cmd-read',
         'astros-js-dep',
         'astros-asset-dep-parse',
-        'astros-asset-for-dep',
-        {
+        'astros-asset-for-dep', {
             name: 'astros-js-process',
             config: {
                 ignore_require: ['jquery']
             }
         },
-        'astros-cmd-define',
-        {
+        'astros-cmd-define', {
             name: 'astros-js-tpl',
-            config:{
-                tpl: '$tpl({name},{file},{content})'
+            config: {
+                tpl: '$tpl(\'{name}\',\'{content}\')',
+                define: ['(function(win) {',
+                    'var _tpl = {};',
+                    'window.$tpl = function(key, ctx) {',
+                        'if (ctx) {',
+                            '_tpl[key] = ctx;',
+                            'return;',
+                        '}',
+                        'return _tpl[key];',
+                    '}',
+                '}(window));',
+                ].join('\n')
             }
         },
         'astros-svgfont',
@@ -51,4 +61,3 @@ module.exports = {
         'astros-css-sprite'
     ]
 }
-
