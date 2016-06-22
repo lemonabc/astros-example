@@ -4,8 +4,10 @@ module.exports = {
     // 站点根目录
     port: 3200,
     root: require('path').join(__dirname, '..'),
+    // 静态资源服务器地址，默认为本机
+    // host: 'http://127.0.0.1:3104/',
     // 页面存储路径
-    // page: require('path').join(__dirname, '..', 'pages'),
+    // page: require('path').join(__dirname, '..', 'tpls'),
     // 自定发布目录
     // release: require('path').join(__dirname, '..', 'build'),
     // JS文件后缀名，默认为js
@@ -14,18 +16,10 @@ module.exports = {
     // cssExt:'less',
     // htmlExt : 'html',
     // JS 相关配置
-    cdnPrefix: '/productname',
-    imgPath: '../..',
+    // 静态资源在服务器分配的目录
+    // cdnPrefix: '/astro',
     // 打开图片、字体资源MD5
     imgMd5 : true,
-    js: {
-        // 模块对应的外网引用地址
-        // source: {
-        //     'jquery': 'http://cdn.baidu.com/jquery.js',
-        // },
-        // 不合并的组件
-        unCombine: ['jquery', 'mo', 'zepto']
-    },
     // 发布时需要忽略的Assets下的目录
     ignore: ['jslib', 'less', 'jsLib'],
     // 发布时需要加载的插件，开发、调试时不会加载
@@ -45,7 +39,12 @@ module.exports = {
         //js之间的依赖
         'astros-js-dep',
         // 解析JS
-        'astros-js-process',
+        {
+            name: 'astros-js-process',
+            config: {
+                ignore_require: ['jquery']
+            }
+        },
         //js模版处理
         'astros-cmd-define', {
             name: 'astros-js-tpl',
@@ -65,7 +64,6 @@ module.exports = {
             }
         },
         // 'astros-js-jshint',
-        'astros-cmd-define',
         // 自动生成字体文件
         'astros-svgfont',
         // 压缩JS
