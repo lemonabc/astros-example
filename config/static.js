@@ -53,10 +53,10 @@ module.exports = {
                 ].join('\n')
             }
         },
-        'astros-svgfont',
         // 压缩JS
         // 'astros-js-minify',
         'astros-css-less2',
+        'astros-svgfont',
         'astros-css-sprite'
     ]
 }

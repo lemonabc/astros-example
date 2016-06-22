@@ -64,13 +64,13 @@ module.exports = {
             }
         },
         // 'astros-js-jshint',
-        // 自动生成字体文件
-        'astros-svgfont',
         // 压缩JS
         'astros-js-minify',
         // 解析LESS
         'astros-css-less2',
-        'astros-css-clean',
-        'astros-css-sprite'
+        // 自动生成字体文件
+        'astros-svgfont',
+        'astros-css-sprite',
+        'astros-css-clean'
     ]
 }
