@@ -5,6 +5,8 @@ module.exports = {
     // env: 'development',
     // 项目名称
     name: 'astro',
+    openTag:"<%",
+    closeTag:"<%",
     // 服务器端口
     port: 3100,
     // 站点根目录

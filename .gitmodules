@@ -73,7 +73,15 @@
 [submodule "node_modules/astros-css-less2"]
 	path = node_modules/astros-css-less2
 	url = git@github.com:lemonabc/astros-css-less2.git
-
 [submodule "node_modules/svgfont"]
 	path = node_modules/svgfont
 	url = git@github.com:lemonabc/svgfont.git
+[submodule "node_modules/astros-asset-dep-parse"]
+	path = node_modules/astros-asset-dep-parse
+	url = git@github.com:lemonabc/astros-asset-dep-parse.git
+[submodule "node_modules/astros-asset-for-dep"]
+	path = node_modules/astros-asset-for-dep
+	url = git@github.com:lemonabc/astros-asset-for-dep.git
+[submodule "node_modules/astros-css-clean"]
+	path = node_modules/astros-css-clean
+	url = git://github.com/wheasy/astros-css-clean.git
