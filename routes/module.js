@@ -1,5 +1,6 @@
 /**
  * @title: 演示模块化
+ * @html: module
  * @ctime: 2015/10/09
  * @edittime: 2016-03-14 15:33:29
  * @wd: wheasy

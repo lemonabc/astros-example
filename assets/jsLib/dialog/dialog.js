@@ -1,6 +1,5 @@
 module.exports = function(msg){
     console.log(msg);
-
-    $tpl('tpl.t1');
-    $tpl('tpl.t1');
+    // $tpl_require('tpl/t1')
+    return $tpl('tpl/t1') + '<img src="'+$res('jsimg.jpg')+'">';
 }

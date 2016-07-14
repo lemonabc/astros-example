@@ -1,15 +1,15 @@
 /**
- * @title: 演示cmd插件
- * @html: cmd
- * @ctime: 2015/10/09
- * @edittime: 2016-03-14 15:33:29
+ * @title: 资源引用示例
+ * @html: res-refer
+ * @ctime: 2016-07-13 11:31:12
+ * @edittime: 2016-07-13 11:31:16
  * @wd: wheasy
- * @router: /cmd
+ * @router: /res-refer
  */
 var router = require('express').Router(); // 新建一个 router
-router.get('/cmd', function(req, res) {
-    res.render('cmd', {
-        title:'首页'
+router.get('/res-refer', function(req, res) {
+    res.render('res-refer', {
+        title:'资源引用示例'
     }, function(err, html){
         res.set('Content-Type', 'text/html');
         res.end(html)
