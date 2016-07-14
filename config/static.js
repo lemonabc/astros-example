@@ -36,7 +36,8 @@ module.exports = {
                 ignore_require: ['jquery']
             }
         },
-        'astros-cmd-define', {
+        'astros-cmd-define', 
+        {
             name: 'astros-js-tpl',
             config: {
                 tpl: '$tpl(\'{name}\',\'{content}\')',
@@ -53,6 +54,7 @@ module.exports = {
                 ].join('\n')
             }
         },
+        'astros-js-babel',
         // 压缩JS
         // 'astros-js-minify',
         'astros-css-less2',

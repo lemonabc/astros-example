@@ -36,6 +36,7 @@ module.exports = {
         'astros-img-interlace',
         // 'astros-cmd-dep',
         // 'astros-cmd-read',
+        'astros-cmd-define', 
         //js之间的依赖
         'astros-js-dep',
         // 解析JS
@@ -45,8 +46,8 @@ module.exports = {
                 ignore_require: ['jquery']
             }
         },
-        //js模版处理
-        'astros-cmd-define', {
+        //js 增加define方法
+        {
             name: 'astros-js-tpl',
             config: {
                 tpl: '$tpl(\'{name}\',\'{content}\')',
@@ -65,6 +66,7 @@ module.exports = {
         },
         // 'astros-js-jshint',
         // 压缩JS
+        'astros-js-babel',
         'astros-js-minify',
         // 解析LESS
         'astros-css-less2',
