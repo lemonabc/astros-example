@@ -84,4 +84,4 @@
 	url = git@github.com:lemonabc/astros-asset-for-dep.git
 [submodule "node_modules/astros-css-clean"]
 	path = node_modules/astros-css-clean
-	url = git://github.com/wheasy/astros-css-clean.git
+	url = git@github.com/wheasy/astros-css-clean.git
