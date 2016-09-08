@@ -1,6 +1,3 @@
-[submodule "node_modules/astros"]
-	path = node_modules/astros
-	url = git@github.com:lemonabc/astros.git
 [submodule "node_modules/lang-utils"]
 	path = node_modules/lang-utils
 	url = git@github.com:lemonabc/lang-utils.git
@@ -10,45 +7,18 @@
 [submodule "node_modules/astros-css-less"]
 	path = node_modules/astros-css-less
 	url = git@github.com:lemonabc/astros-css-less.git
-[submodule "node_modules/astros-css-sprite"]
-	path = node_modules/astros-css-sprite
-	url = git@github.com:lemonabc/astros-css-sprite.git
-[submodule "node_modules/astros-img-interlace"]
-	path = node_modules/astros-img-interlace
-	url = git@github.com:lemonabc/astros-img-interlace.git
-[submodule "node_modules/astros-js-dep"]
-	path = node_modules/astros-js-dep
-	url = git@github.com:lemonabc/astros-js-dep.git
 [submodule "node_modules/astros-js-minify"]
 	path = node_modules/astros-js-minify
 	url = git@github.com:lemonabc/astros-js-minify.git
-[submodule "node_modules/astros-js-process"]
-	path = node_modules/astros-js-process
-	url = git@github.com:lemonabc/astros-js-process.git
-[submodule "node_modules/astros-js-tpl"]
-	path = node_modules/astros-js-tpl
-	url = git@github.com:lemonabc/astros-js-tpl.git
-[submodule "node_modules/astros-resource-refer"]
-	path = node_modules/astros-resource-refer
-	url = git@github.com:lemonabc/astros-resource-refer.git
 [submodule "node_modules/astros-webcom-refer"]
 	path = node_modules/astros-webcom-refer
 	url = git@github.com:lemonabc/astros-webcom-refer.git
 [submodule "node_modules/console-prettify"]
 	path = node_modules/console-prettify
 	url = git@github.com:lemonabc/console-prettify.git
-[submodule "node_modules/image-magic"]
-	path = node_modules/image-magic
-	url = git@github.com:lemonabc/image-magic.git
 [submodule "node_modules/pandora-proxy"]
 	path = node_modules/pandora-proxy
 	url = git@github.com:lemonabc/pandora-proxy.git
-[submodule "node_modules/pandorajs"]
-	path = node_modules/pandorajs
-	url = git@github.com:lemonabc/pandorajs.git
-[submodule "node_modules/astros-2ximg"]
-	path = node_modules/astros-2ximg
-	url = git@github.com:lemonabc/astros-2ximg.git
 [submodule "node_modules/astros-cmd-dep"]
 	path = node_modules/astros-cmd-dep
 	url = git@github.com:lemonabc/astros-cmd-dep.git
@@ -61,24 +31,15 @@
 [submodule "node_modules/astros-jscom-path"]
 	path = node_modules/astros-jscom-path
 	url = git@github.com:lemonabc/astros-jscom-path.git
-[submodule "node_modules/astros-svgfont"]
-	path = node_modules/astros-svgfont
-	url = git@github.com:lemonabc/astros-svgfont.git
 [submodule "node_modules/pandora-astros-map"]
 	path = node_modules/pandora-astros-map
 	url = git@github.com:lemonabc/pandora-astros-map.git
 [submodule "node_modules/astros-css-less2"]
 	path = node_modules/astros-css-less2
 	url = git@github.com:lemonabc/astros-css-less2.git
-[submodule "node_modules/svgfont"]
-	path = node_modules/svgfont
-	url = git@github.com:lemonabc/svgfont.git
 [submodule "node_modules/astros-asset-dep-parse"]
 	path = node_modules/astros-asset-dep-parse
 	url = git@github.com:lemonabc/astros-asset-dep-parse.git
 [submodule "node_modules/astros-asset-for-dep"]
 	path = node_modules/astros-asset-for-dep
 	url = git@github.com:lemonabc/astros-asset-for-dep.git
-[submodule "node_modules/astros-css-clean"]
-	path = node_modules/astros-css-clean
-	url = git://github.com/wheasy/astros-css-clean.git
