@@ -37,9 +37,6 @@
 [submodule "node_modules/console-prettify"]
 	path = node_modules/console-prettify
 	url = git@github.com:lemonabc/console-prettify.git
-[submodule "node_modules/file-plus"]
-	path = node_modules/file-plus
-	url = git@github.com:lemonabc/file-plus.git
 [submodule "node_modules/image-magic"]
 	path = node_modules/image-magic
 	url = git@github.com:lemonabc/image-magic.git
