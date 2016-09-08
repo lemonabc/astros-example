@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Astros项目的示例站点",
   "main": "server.js",
+  "engines" : { "npm" : ">3.0.0" },
   "dependencies": {
     "astros": "~1.0.9",
     "astros-2ximg": "~1.0.3",
@@ -30,6 +31,7 @@
     "lang-utils": "~1.0.0",
     "pandora-astros-map": "~2.0.0",
     "pandorajs": "~1.0.7",
+    "image-magic":"~1.0.9",
     "pandora-proxy": "~1.0.0"
   },
   "devDependencies": {},
