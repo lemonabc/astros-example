@@ -85,3 +85,6 @@
 [submodule "node_modules/astros-css-clean"]
 	path = node_modules/astros-css-clean
 	url = git@github.com/wheasy/astros-css-clean.git
+[submodule "node_modules/astros-js-babel"]
+	path = node_modules/astros-js-babel
+	url = https://wheasy@github.com/lemonabc/astros-js-babel.git
